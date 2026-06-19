@@ -45,14 +45,20 @@ The Gold tables were connected to Power BI to create a fully interactive dashboa
 ## Tables Created
 **Bronze**
 
-+ BRONZE_HOTEL_BOOKING
+BRONZE_HOTEL_BOOKING
+
 **Silver**
 
 SILVER_HOTEL_BOOKINGS
+
 **Gold**
 
 GOLD_AGG_DAILY_BOOKING
+
 GOLD_AGG_HOTEL_CITY_REVENUE
+
 GOLD_AGG_MONTHLY_REVENUE_BOOKING
+
 GOLD_AGG_BOOKING_STATUS
+
 GOLD_AGG_ROOM_TYPE
