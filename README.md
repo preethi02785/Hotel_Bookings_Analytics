@@ -28,6 +28,7 @@ Raw hotel booking data was ingested into Snowflake, cleaned and transformed usin
 * Monthly Revenue & Bookings
 * Bookings by Status
 * Bookings by Room Type
+
 These tables are optimized for BI tools and business consumption.
 
 ## Dashboard (Power BI):
