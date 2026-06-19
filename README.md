@@ -10,6 +10,7 @@ Raw hotel booking data was ingested into Snowflake, cleaned and transformed usin
 Raw CSV loaded into Snowflake using File Formats, Internal Stages, and COPY INTO.
 No transformations applied.
 All columns are stored as STRING.
+
 **Silver Layer (Cleaned & Standardized):** Data cleaning and transformation logic
 
 Trimmed and standardised text fields
@@ -19,6 +20,7 @@ Removed invalid date ranges
 Converted numeric fields to proper types
 Corrected typos in booking status
 Removed negative values from revenue
+
 **Gold Layer (Analytics & KPIs):** Aggregated tables created for analytics and dashboards
 
 Daily Booking Revenue
