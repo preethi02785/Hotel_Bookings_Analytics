@@ -7,37 +7,40 @@ Raw hotel booking data was ingested into Snowflake, cleaned and transformed usin
 ## Architecture Used: Medallion Pattern:
 **Bronze Layer (Raw Ingestion):**
 
-Raw CSV loaded into Snowflake using File Formats, Internal Stages, and COPY INTO.
-No transformations applied.
-All columns are stored as STRING.
+* Raw CSV loaded into Snowflake using File Formats, Internal Stages, and COPY INTO.
+* No transformations applied.
+* All columns are stored as STRING.
 
 **Silver Layer (Cleaned & Standardized):** Data cleaning and transformation logic
 
-Trimmed and standardised text fields
-Fixed invalid or missing emails
-Converted string dates to DATE format
-Removed invalid date ranges
-Converted numeric fields to proper types
-Corrected typos in booking status
-Removed negative values from revenue
+* Trimmed and standardised text fields
+* Fixed invalid or missing emails
+* Converted string dates to DATE format
+* Removed invalid date ranges
+* Converted numeric fields to proper types
+* Corrected typos in booking status
+* Removed negative values from revenue
 
 **Gold Layer (Analytics & KPIs):** Aggregated tables created for analytics and dashboards
 
-Daily Booking Revenue
-Revenue by City
-Monthly Revenue & Bookings
-Bookings by Status
-Bookings by Room Type
+* Daily Booking Revenue
+* Revenue by City
+* Monthly Revenue & Bookings
+* Bookings by Status
+* Bookings by Room Type
 These tables are optimized for BI tools and business consumption.
 ## Dashboard (Power BI):
-The Gold tables were connected to Power BI to create a fully interactive dashboard. KPIs Included:
+The Gold tables were connected to Power BI to create a fully interactive dashboard. 
 
-Total Revenue
-Total Bookings
-Revenue by City (Top 10)
-Monthly Booking Trends
-Room Type Distribution
-Bookings by Status
+**KPIs Included:**
+
+- Total Revenue
+- Total Bookings
+- Revenue by City (Top 10)
+- Monthly Booking Trends
+- Room Type Distribution
+- Bookings by Status
+  
 ## Tables Created
 **Bronze**
 
