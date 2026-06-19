@@ -5,13 +5,13 @@ This project demonstrates an end-to-end data analytics pipeline built using Snow
 Raw hotel booking data was ingested into Snowflake, cleaned and transformed using SQL, and then aggregated into analytical tables. These Gold-layer tables were finally connected to Power BI to create an interactive dashboard showing key business metrics.
 
 ## Architecture Used: Medallion Pattern:
-**Bronze Layer (Raw Ingestion):**
+**1. Bronze Layer (Raw Ingestion):**
 
 * Raw CSV loaded into Snowflake using File Formats, Internal Stages, and COPY INTO.
 * No transformations applied.
 * All columns are stored as STRING.
 
-**Silver Layer (Cleaned & Standardized):** Data cleaning and transformation logic
+**2. Silver Layer (Cleaned & Standardised):** Data cleaning and transformation logic
 
 * Trimmed and standardised text fields
 * Fixed invalid or missing emails
@@ -21,7 +21,7 @@ Raw hotel booking data was ingested into Snowflake, cleaned and transformed usin
 * Corrected typos in booking status
 * Removed negative values from revenue
 
-**Gold Layer (Analytics & KPIs):** Aggregated tables created for analytics and dashboards
+**3. Gold Layer (Analytics & KPIs):** Aggregated tables created for analytics and dashboards
 
 * Daily Booking Revenue
 * Revenue by City
@@ -29,6 +29,7 @@ Raw hotel booking data was ingested into Snowflake, cleaned and transformed usin
 * Bookings by Status
 * Bookings by Room Type
 These tables are optimized for BI tools and business consumption.
+
 ## Dashboard (Power BI):
 The Gold tables were connected to Power BI to create a fully interactive dashboard. 
 
@@ -44,7 +45,7 @@ The Gold tables were connected to Power BI to create a fully interactive dashboa
 ## Tables Created
 **Bronze**
 
-BRONZE_HOTEL_BOOKING
++ BRONZE_HOTEL_BOOKING
 **Silver**
 
 SILVER_HOTEL_BOOKINGS
